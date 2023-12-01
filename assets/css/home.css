@@ -1,0 +1,92 @@
+.main-home {
+    width: 100%;
+    display: flex;
+    padding: 5% 0;
+}
+
+.main-home .content {
+    width: 60%;
+    padding-left: 3%;
+}
+
+.main-home .content h1 {
+    color: #2d98da;
+    color: var(--link-hover-bg);
+    font-size: 3rem;
+}
+
+.main-home .content p {
+    color: #2d98da;
+    color: var(--light-orange);
+    font-size: 1.3em;
+    padding-right: 20%;
+    margin-top: 20px;
+}
+
+.main-home .content button {
+    background-color: #2d98da;
+    padding: 6px 12px;
+    border: 0;
+    border-radius: 10px;
+    margin-top: 20px;
+    color: white;
+}
+
+.main-home .image-sec {
+    width: 40%;
+    display: flex;
+    justify-content: flex-end;
+    padding-right: 10%;
+}
+
+.main-home .image-sec img {
+    width: 80%;
+}
+
+/* resposive */
+
+
+@media only screen and (max-width: 900px) {
+
+    .main-home .content h1 {
+        font-size: 2.5rem;
+    }
+
+    .main-home .content p {
+        font-size: 1rem;
+    }
+
+}
+
+@media only screen and (max-width: 650px) {
+
+    .main-home .content h1 {
+        font-size: 2rem;
+    }
+
+    .main-home .content p {
+        font-size: 0.5;
+    }
+
+    .main-home .image-sec img {
+        width: 95%;
+    }
+
+}
+
+@media only screen and (max-width: 550px) {
+
+    .main-home .image-sec img {
+        display: none;
+    }
+
+    .main-home .image-sec {
+        width: 0%;
+    }
+
+
+    .main-home .content {
+        width: 100%;
+    }
+
+}

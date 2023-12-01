@@ -1,0 +1,17 @@
+RewriteEngine On
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteCond %{REQUEST_FILENAME} !-d
+# RewriteRule ^(.*)$ index.php/$1 [L]
+# Redirect requests to add .php extension if the .php file exists
+# RewriteCond %{REQUEST_FILENAME}.php -f
+# RewriteRule ^([^\.]+)$ $1.php [NC,L]
+
+
+Options -Indexes
+
+#404 error
+ErrorDocument 404 /404.php
+ErrorDocument 403 /404.php
+
+#for 00webhost start session storage
+php_flag output_buffering on

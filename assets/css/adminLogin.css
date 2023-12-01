@@ -1,0 +1,87 @@
+.form-container {
+    position: relative;
+    width: 300px;
+    margin: 100px auto;
+    padding: 20px;
+    background-color: var(--main-bg2-color);
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+    /*animation: form_error 0.7s linear;*/
+}
+.form-container-error{
+    animation: form_error 0.7s linear;
+}
+
+@keyframes form_error {
+    0%{
+        left: 0px;
+        background: var(--red);
+    }
+    25%{
+        left: -20px;
+    }
+    50%{
+        left: 20px;
+    }
+    75%{
+        left: -20px;
+    }
+    100%{
+        left: 0px;
+    }
+}
+
+.form-container .form-group {
+    margin-bottom: 20px;
+    margin-top: 10px;
+}
+
+.form-container .form-group .form-forgotPass{
+    color: var(--simple-2-white);
+    text-decoration: none;
+    float: right;
+    padding: 10px 0;
+}
+.form-container .form-group .form-forgotPass:hover{
+    color: var(--link-hover-bg);
+    text-decoration: underline;
+}
+
+.form-container .form-group .form-label {
+    display: block;
+    margin-bottom: 6px;
+    font-weight: bold;
+}
+
+.form-container .form-group .form-input {
+    width: 100%;
+    padding: 10px;
+    border: none;
+    border-radius: 4px;
+    background-color: var(--simple-2-white);
+    color: var(--main-bg1-color);
+}
+
+.form-container .form-group .form-input:focus {
+    outline: none;
+}
+
+.form-container .form-button {
+    width: 100%;
+    padding: 10px;
+    background-color: var(--link-hover-bg);
+    color: var(--main-tx-color);
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.form-container .form-button:hover {
+    background-color: var(--orange);
+}
+
+.form-container .show-error-span{
+    color: var(--red);
+    font-size: 0.8rem;
+    padding: 5px 0;
+}
